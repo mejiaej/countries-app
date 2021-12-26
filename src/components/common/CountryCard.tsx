@@ -33,10 +33,10 @@ const CountryCardBack = ({
   population,
 }: CountryCardBackProps) => (
   <>
-    <h4 className="mt-5">{officialName}</h4>
-    <div className="mt-5">{`Region: ${region}`}</div>
-    <div className="mt-5">{`Capital: ${capital || 'unkown'}`}</div>
-    <div className="mt-5">{`Population: ${population}`}</div>
+    <h4 data-testid="card-back-name" className="mt-5">{officialName}</h4>
+    <div data-testid="card-back-region" className="mt-5">{`Region: ${region}`}</div>
+    <div data-testid="card-back-capital" className="mt-5">{`Capital: ${capital || 'unkown'}`}</div>
+    <div data-testid="card-back-population" className="mt-5">{`Population: ${population}`}</div>
   </>
 );
 
