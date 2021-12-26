@@ -11,6 +11,9 @@ interface CountryApi {
   flags: {
     svg: string;
   };
+  region: string;
+  capital: string[];
+  population: number;
 }
 
 const CountriesScreen = (): JSX.Element => {
@@ -27,15 +30,19 @@ const CountriesScreen = (): JSX.Element => {
     loadCountries();
   }, []);
 
-  if(loading) return <div>..Loading</div>;
+  if (loading) return <div>..Loading</div>;
 
   return (
     <div className="countries-container">
       {countries.map((country) => (
         <CountryCard
           key={country.cca3}
+          className="mt-10"
           officialName={country.name.official}
           flagUrl={country.flags.svg}
+          region={country.region}
+          capital={country?.capital?.length ? country.capital.join(',') : null}
+          population={country.population.toLocaleString()}
         />
       ))}
     </div>
