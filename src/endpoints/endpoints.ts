@@ -1,0 +1,5 @@
+const BASE_API_URL = 'https://restcountries.com/v3.1/';
+const GET_ALL_COUNTRIES_ENDPOINT = `${BASE_API_URL}/all`;
+const GET_COUNTRY_BY_NAME_ENDPOINT = `${BASE_API_URL}/name`;
+
+export { GET_ALL_COUNTRIES_ENDPOINT, GET_COUNTRY_BY_NAME_ENDPOINT };

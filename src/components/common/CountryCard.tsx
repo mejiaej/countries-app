@@ -11,10 +11,14 @@ const CountryCard = ({
   flagUrl,
   className,
 }: CountryCardProps) => {
-
   return (
     <div className={`country-card-container ${className}`}>
-      <img className="flag" src={flagUrl} loading="lazy" alt={`${officialName} flag`}/>
+      <img
+        className="flag"
+        src={flagUrl}
+        loading="lazy"
+        alt={`${officialName} flag`}
+      />
       <h4 className="mt-10">{officialName}</h4>
     </div>
   );

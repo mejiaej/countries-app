@@ -1,15 +1,15 @@
-.country-card-container{
+.country-card-container {
   display: flex;
   flex-direction: column;
   width: 13rem;
   height: 15rem;
   overflow: hidden;
-  border-radius: .5em;
+  border-radius: 0.5em;
   text-decoration: none;
   background: white;
   margin: 1em;
   padding: 2.75em 2.5em;
-  box-shadow: 0 1.5em 2.5em -.5em rgba(0,0,0,0.2);
+  box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, 0.2);
   align-items: center;
   cursor: pointer;
 }
