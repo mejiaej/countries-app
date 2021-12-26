@@ -16,12 +16,13 @@ interface CountryCardBackProps {
 const CountryCardFront = ({ flagUrl, officialName }: CountryCardFrontProps) => (
   <>
     <img
+      data-testid='card-front-img'
       className="flag"
       src={flagUrl}
       loading="lazy"
       alt={`${officialName} flag`}
     />
-    <h4 className="mt-10">{officialName}</h4>
+    <h4 data-testid="card-front-name" className="mt-10">{officialName}</h4>
   </>
 );
 
