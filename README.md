@@ -36,3 +36,7 @@ Use: https://restcountries.eu/rest/v2/all to get all the countries
 ## Run tests
 
 `$ npm test a`
+
+
+
+State manager(Redux) wasn't needed in this case. If you wanna know my state management approach you can take a look at this repo https://github.com/mejiaej/news-feed-ts
